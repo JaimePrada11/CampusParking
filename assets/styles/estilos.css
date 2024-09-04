@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/Fondo-InicioSesion.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/Fondo-InicioSesion.jpg);
+    background-size: cover;
+    filter: blur(5px);
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.InicioSesion {
+    position: relative;
+    max-width: 90vw;
+    width: 85vw;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    max-width: 310px;
+    border-bottom: 2px solid white;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.input:focus~label,
+.input:valid~label {
+    top: -5px;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 600;
+    transition: all 0.4s ease;
+    text-transform: uppercase;
+
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.registrarse {
+    font-size: 0.9rem;
+    color: white;
+    align-items: center;
+    margin: 25px 0 10px;
+    text-align: center;
+
+}
+
+.social-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-container a {
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+    transition: 0.3s ease-in-out;
+    color: white;
+
+}
+
+.social-container a:hover {
+    background-color: black;
+}
+
