@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/styles/Gestion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <main>
+
+        <section class="registro-vehiculo">
+            <form action="">
+                <h1>REGISTRO</h1>
+                <div class="inputbox">
+                    <input type="text" id="placa" required>
+                    <label for="">placa</label>
+                </div>
+                <p>Tipo de vehiculo</p>
+                <div class="radio">
+                    <div class="radio-option">
+                        <input type="radio" id="carro" name="vehiculo" value="carro" required>
+                        <label for="carro"><i class="fas fa-car"></i> Carro</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="moto" name="vehiculo" value="moto" required>
+                        <label for="moto"><i class="fas fa-motorcycle"></i> Moto</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="camion" name="vehiculo" value="camion" required>
+                        <label for="camion"><i class="fas fa-truck"></i> Camión</label>
+                    </div>
+
+                </div>
+                <button type="submit">Registrar</button>    
+            </form>
+        </section>
+
+    </main>
+</body>
+
+</html>
