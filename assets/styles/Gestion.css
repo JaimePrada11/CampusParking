@@ -10,19 +10,41 @@
     box-sizing: border-box;
 }
 
+body{
+    width: 100vw;
+    height: 100vh;
+}
 
 .registro-vehiculo {
+    position: relative;
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: url(../images/Fondo-RegistroVehiculos.webp);
-    background-position: center;
-    background-size: cover; 
     color: #fff;
+    overflow: hidden; 
+    background-image: url(../images/Nuevo-Inicio-Sesion.png); 
+    background-position: center left;
+    background-size: cover;
+    z-index: 0;
 }
+
+.registro-vehiculo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/Nuevo-Inicio-Sesion.png); 
+    background-position: center left;
+    background-size: cover;
+    filter: blur(1.5px); 
+    z-index: -1; 
+}
+
 
 .registro-vehiculo form {
     background-color: transparent;

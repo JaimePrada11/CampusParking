@@ -14,18 +14,31 @@ body{
     font-family: "Poppins", sans-serif;
 }
 
-.Inicio{
-    position: relative ;
-    text-align: center;
-    height: 50vh;
-    background-image: url(https://media-public.canva.com/mQO1s/MADyQ1mQO1s/1/s.jpg);
-    background-size: cover;
-    background-position: center top;
+.Inicio {
+    position: relative;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    background-image: url(https://media-public.canva.com/mQO1s/MADyQ1mQO1s/1/s.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 7vw;
+    overflow: hidden;
+}
+
+.Inicio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    filter: blur(10px); 
+    z-index: -1;
+    opacity: 0.9;
 }
 
 .Inicio h1{
@@ -36,8 +49,6 @@ body{
     position: absolute;
     left: 45%;
     top: 15%;
-
-
 }
 
 button{
@@ -59,10 +70,13 @@ button{
 
 button:hover{
     background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+
 
 }
 button:active {
     background-color: rgba(230, 230, 230, 1); 
+    color: white;
 }
 
 .Servicios{
@@ -72,6 +86,12 @@ button:active {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-bottom: 20vw ;
+}
+
+.Servicios h1{
+    font-size: 2rem;
+    text-transform: uppercase;
 }
 
 .Servicios div{
