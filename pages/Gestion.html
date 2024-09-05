@@ -26,7 +26,7 @@
                             <span class="nav__name">Home</span>
                         </a>
                     </li>
-                    
+
                     <li class="nav__item">
                         <a href="#registro-vehiculo" class="nav__link">
                             <i class='bx bx-user-plus nav__icon'></i>
@@ -35,7 +35,7 @@
                     </li>
 
                     <li class="nav__item">
-                        <a href="#skills" class="nav__link">
+                        <a href="#ContenedorVehiculos" class="nav__link">
                             <i class='bx bx-car nav__icon'></i>
                             <span class="nav__name">Vehiculos</span>
                         </a>
@@ -62,7 +62,7 @@
 
     <main>
 
-        <section class="registro-vehiculo" id="registro-vehiculo">
+        <section class="registro-vehiculo" id="registro-vehiculo" style="display: none;">
             <form action="">
                 <h1>REGISTRO</h1>
                 <div class="inputbox">
@@ -85,8 +85,108 @@
                     </div>
 
                 </div>
-                <button type="submit">Registrar</button>    
+                <button type="submit">Registrar</button>
             </form>
+        </section>
+
+        <section class="ContenedorVehiculos" id="ContenedorVehiculos" >
+            <div class="filtros">
+                <div class="radio">
+                    <div class="radio-option">
+                        <input type="radio" id="todos" name="vehiculo" value="todos" required>
+                        <label for="todos"><i class="fas fa-parking"></i> Todos</label>
+                    </div>
+
+                    <div class="radio-option">
+                        <input type="radio" id="carro" name="vehiculo" value="carro" required>
+                        <label for="carro"><i class="fas fa-car"></i> Carro</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="moto" name="vehiculo" value="moto" required>
+                        <label for="moto"><i class="fas fa-motorcycle"></i> Moto</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="camion" name="vehiculo" value="camion" required>
+                        <label for="camion"><i class="fas fa-truck"></i> Camión</label>
+                    </div>
+
+                </div>
+                <div class="buscador">
+                    <input type="text" id="filter-placa" placeholder="Placa" />
+                    <button id="filter-button">Filtrar</button>
+                </div>
+
+            </div>
+            </div>
+            <div class="contenedor" id="contenedor">
+                <div class="vehiculo">
+                    <img src="https://media-public.canva.com/ujLLY/MAEu5YujLLY/1/t.png" alt="">
+                    <div class="info">
+                        <div class="infoVehiculo">
+                            <h1 class="placa">ABC123</h1>
+                            <h2 class="tipo">MOTO</h2>
+                            <h2 class="lugar"> a1</h2>
+                        </div>
+                        <div class="infoestacionamiento">
+                            <p class="entrada">Entrada</p>
+                            <p class="salida">Salida</p>
+                            <p class="tiempo">Tiempo</p>
+                            <p class="costo">Costo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="vehiculo">
+                    <img src="https://media-public.canva.com/ujLLY/MAEu5YujLLY/1/t.png" alt="">
+                    <div class="info">
+                        <div class="infoVehiculo">
+                            <h1 class="placa">ABC123</h1>
+                            <h2 class="tipo">MOTO</h2>
+                            <h2 class="lugar"> a1</h2>
+
+                        </div>
+                        <div class="infoestacionamiento">
+                            <p>Entrada</p>
+                            <p>Salida</p>
+                            <p>Tiempo</p>
+                            <p>Costo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="vehiculo">
+                    <img src="https://media-public.canva.com/ujLLY/MAEu5YujLLY/1/t.png" alt="">
+                    <div class="info">
+                        <div class="infoVehiculo">
+                            <h1 class="placa">ABC123</h1>
+                            <h2 class="tipo">MOTO</h2>
+                            <h2 class="lugar"> a1</h2>
+
+                        </div>
+                        <div class="infoestacionamiento">
+                            <p>Entrada</p>
+                            <p>Salida</p>
+                            <p>Tiempo</p>
+                            <p>Costo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="vehiculo">
+                    <img src="https://media-public.canva.com/ujLLY/MAEu5YujLLY/1/t.png" alt="">
+                    <div class="info">
+                        <div class="infoVehiculo">
+                            <h1 class="placa">ABC123</h1>
+                            <h2 class="tipo">MOTO</h2>
+                            <h2 class="lugar"> a1</h2>
+
+                        </div>
+                        <div class="infoestacionamiento">
+                            <p>Entrada</p>
+                            <p>Salida</p>
+                            <p>Tiempo</p>
+                            <p>Costo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>

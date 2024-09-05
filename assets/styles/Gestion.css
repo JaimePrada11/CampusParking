@@ -13,6 +13,7 @@
 body{
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 .registro-vehiculo {
@@ -121,7 +122,6 @@ body{
 }
 
 .registro-vehiculo button {
-
     width: 50%;
     height: 40px;
     border-radius: 40px;
@@ -137,5 +137,173 @@ body{
 
 .registro-vehiculo button:hover {
     background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.ContenedorVehiculos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 12vw;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.vehiculo{
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    width: 15rem;
+    height: auto;
+    object-fit: fill;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background-color: #becada;
+    color: white;
+}
+
+
+.vehiculo img{
+    margin-top: 2vw;
+    width: 100%;
+    max-width: 15rem;
+    filter: drop-shadow(0 20px 15px#0009);
+}
+
+
+.vehiculo h1{
+    font-family: "ranker";
+    font-size: 4rem;
+    margin-bottom: 0;
+    color:#8fa0b7;
+}
+
+.vehiculo h2{
+    margin-top: 0;
+    font-family: "ranker";
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+.infoestacionamiento{
+    text-align: start;
+    display: none;
+}
+
+.filtros{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.filtros .radio{
+    margin-top: 10vw;
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.filtros .radio-option{
+    margin: 0.5rem;
+    width: 120px;
+    height: auto;
+    padding: 1rem;
+    height: auto;
+    object-fit: fill;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background-color: #becada;
+    color: white;
+}
+
+.filtros .radio-option label i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color:#8fa0b7;
+;
+}
+
+.buscador{
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0.5rem;
+    text-align: center;
+
+}
+
+
+.buscador input {
+    width: 50%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 35px 0 5px;
+    color: black;
+    border-bottom: 2px solid rgb(2, 0, 0);
+    margin: 2rem;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.buscador input::placeholder{
+    text-align: center;
+}
+
+#filter-placa:focus {
+    border-radius: 5px;
+    color: red;
+    border-color: #007bff; 
+    background-color: #f0f8ff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+    outline: none; 
+}
+
+.buscador button{
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: rgb(83, 4, 4);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 600;
+    transition: all 0.4s ease;
+    text-transform: uppercase;
+    margin-bottom: 1vw;
+}
+
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
 
 }
