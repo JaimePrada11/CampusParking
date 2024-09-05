@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../assets/styles/Menu.css">
     <link rel="stylesheet" href="../assets/styles/Gestion.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="../assets/styles/Menu.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
 </head>
@@ -21,7 +21,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="./Home.html" class="nav__link active-link">
+                        <a href="#Home" class="nav__link active-link">
                             <i class='bx bx-home-alt nav__icon'></i>
                             <span class="nav__name">Home</span>
                         </a>
@@ -62,8 +62,29 @@
 
     <main>
 
-        <section class="registro-vehiculo" id="registro-vehiculo" style="display: none;">
-            <form action="">
+        <section class="section inicio">
+            <section class="Inicio" id="Home">
+                <h1>PARKING</h1>
+                <button class="iraregistro">REGISTRO</button>
+            </section>
+            <section class="Servicios">
+                <h1>Acceso Rapido</h1>
+                <div>
+                    <h2>Estacionamiento</h2>
+                    <img src="https://media-public.canva.com/KUlVI/MAEMqMKUlVI/1/s2.jpg" alt="">
+                    <button> MIRAR</button>
+
+                </div>
+                <div>
+                    <h2>Reportes</h2>
+                    <img src="https://media-public.canva.com/MADGyDRBkYQ/4/screen.jpg" alt="">
+                    <button> REVISAR </button>
+                </div>
+            </section>
+        </section>
+
+        <section class="section registro-vehiculo" id="registro-vehiculo">
+            <form action="" id="formvehiculo">
                 <h1>REGISTRO</h1>
                 <div class="inputbox">
                     <input type="text" id="placa" required>
@@ -72,24 +93,24 @@
                 <p>Tipo de vehiculo</p>
                 <div class="radio">
                     <div class="radio-option">
-                        <input type="radio" id="carro" name="vehiculo" value="carro" required>
-                        <label for="carro"><i class="fas fa-car"></i> Carro</label>
+                        <input type="radio" id="carro" name="vehiculo" value="Carro" required>
+                        <label for="Carro"><i class="fas fa-car"></i> Carro</label>
                     </div>
                     <div class="radio-option">
-                        <input type="radio" id="moto" name="vehiculo" value="moto" required>
-                        <label for="moto"><i class="fas fa-motorcycle"></i> Moto</label>
+                        <input type="radio" id="moto" name="vehiculo" value="Moto" required>
+                        <label for="Moto"><i class="fas fa-motorcycle"></i> Moto</label>
                     </div>
                     <div class="radio-option">
-                        <input type="radio" id="camion" name="vehiculo" value="camion" required>
-                        <label for="camion"><i class="fas fa-truck"></i> Camión</label>
+                        <input type="radio" id="camion" name="vehiculo" value="Camion" required>
+                        <label for="Camion"><i class="fas fa-truck"></i> Camión</label>
                     </div>
 
                 </div>
-                <button type="submit">Registrar</button>
+                <button class="nuevo">Registrar</button>
             </form>
         </section>
 
-        <section class="ContenedorVehiculos" id="ContenedorVehiculos" >
+        <section class="section ContenedorVehiculos" id="ContenedorVehiculos">
             <div class="filtros">
                 <div class="radio">
                     <div class="radio-option">
@@ -98,15 +119,15 @@
                     </div>
 
                     <div class="radio-option">
-                        <input type="radio" id="carro" name="vehiculo" value="carro" required>
-                        <label for="carro"><i class="fas fa-car"></i> Carro</label>
+                        <input type="radio" id="Carro" name="vehiculo" value="Carro" required>
+                        <label for="carro"><i class="fas fa-car-side"></i> Carro</label>
                     </div>
                     <div class="radio-option">
-                        <input type="radio" id="moto" name="vehiculo" value="moto" required>
+                        <input type="radio" id="Moto" name="vehiculo" value="Moto" required>
                         <label for="moto"><i class="fas fa-motorcycle"></i> Moto</label>
                     </div>
                     <div class="radio-option">
-                        <input type="radio" id="camion" name="vehiculo" value="camion" required>
+                        <input type="radio" id="Camion" name="vehiculo" value="Camion" required>
                         <label for="camion"><i class="fas fa-truck"></i> Camión</label>
                     </div>
 
@@ -117,79 +138,38 @@
                 </div>
 
             </div>
-            </div>
             <div class="contenedor" id="contenedor">
-                <div class="vehiculo">
-                    <img src="https://media-public.canva.com/ujLLY/MAEu5YujLLY/1/t.png" alt="">
-                    <div class="info">
-                        <div class="infoVehiculo">
-                            <h1 class="placa">ABC123</h1>
-                            <h2 class="tipo">MOTO</h2>
-                            <h2 class="lugar"> a1</h2>
-                        </div>
-                        <div class="infoestacionamiento">
-                            <p class="entrada">Entrada</p>
-                            <p class="salida">Salida</p>
-                            <p class="tiempo">Tiempo</p>
-                            <p class="costo">Costo</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="vehiculo">
-                    <img src="https://media-public.canva.com/ujLLY/MAEu5YujLLY/1/t.png" alt="">
-                    <div class="info">
-                        <div class="infoVehiculo">
-                            <h1 class="placa">ABC123</h1>
-                            <h2 class="tipo">MOTO</h2>
-                            <h2 class="lugar"> a1</h2>
 
-                        </div>
-                        <div class="infoestacionamiento">
-                            <p>Entrada</p>
-                            <p>Salida</p>
-                            <p>Tiempo</p>
-                            <p>Costo</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="vehiculo">
-                    <img src="https://media-public.canva.com/ujLLY/MAEu5YujLLY/1/t.png" alt="">
-                    <div class="info">
-                        <div class="infoVehiculo">
-                            <h1 class="placa">ABC123</h1>
-                            <h2 class="tipo">MOTO</h2>
-                            <h2 class="lugar"> a1</h2>
-
-                        </div>
-                        <div class="infoestacionamiento">
-                            <p>Entrada</p>
-                            <p>Salida</p>
-                            <p>Tiempo</p>
-                            <p>Costo</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="vehiculo">
-                    <img src="https://media-public.canva.com/ujLLY/MAEu5YujLLY/1/t.png" alt="">
-                    <div class="info">
-                        <div class="infoVehiculo">
-                            <h1 class="placa">ABC123</h1>
-                            <h2 class="tipo">MOTO</h2>
-                            <h2 class="lugar"> a1</h2>
-
-                        </div>
-                        <div class="infoestacionamiento">
-                            <p>Entrada</p>
-                            <p>Salida</p>
-                            <p>Tiempo</p>
-                            <p>Costo</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
 
+
+        <template class="plantillaVehiculo">
+            <div class="vehiculo">
+                <img src="" alt="">
+                <div class="info">
+                    <div class="infoVehiculo">
+                        <h1 class="placa"></h1>
+                        <h2 class="tipo"></h2>
+                        <h2 class="lugar">Puesto: <span></span></h2>
+
+                    </div>
+                    <div class="infoestacionamiento">
+                        <p>Hora Entrada: <span> </span></p>
+                        <p>Hora Salida: <span> </span></p>
+                        <p>Tiempo: <span> </span></p>
+                        <p>Costo: <span> </span></p>
+                    </div>
+                </div>
+            </div>
+
+        </template>
+
     </main>
+
+    <script src="../assets/js/main.js"></script>
+
+
 </body>
 
 </html>

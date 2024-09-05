@@ -16,6 +16,131 @@ body{
     overflow-x: hidden;
 }
 
+.Inicio {
+    position: relative;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://media-public.canva.com/mQO1s/MADyQ1mQO1s/1/s.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 7vw;
+    overflow: hidden;
+}
+
+.Inicio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    filter: blur(10px); 
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.Inicio h1{
+    color: white;
+    text-align: center;
+    font-family: "ranker";
+    font-size: 4rem;
+    position: absolute;
+    left: 45%;
+    top: 15%;
+}
+
+.Inicio button{
+    width: 40%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.4s ease;
+    text-transform: uppercase;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+
+}
+
+.Inicio button:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+
+
+}
+.Inicio button:active {
+    background-color: rgba(230, 230, 230, 1); 
+    color: white;
+}
+
+.Servicios{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 22.5vw;
+}
+
+.Servicios h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.Servicios div{
+    margin: 3vw;
+    width: 90%;
+}
+
+.Servicios h2{
+    font-size: 1.5rem;
+
+}
+
+.Servicios img{
+    margin: 2vw;
+    width: 80%;
+    border-radius: 10px;
+    object-fit: cover;
+    filter: drop-shadow(0 20px 15px#0009);
+
+}
+
+.Servicios button{
+    margin-top: 2vw;
+    font-family: "League Spartan", sans-serif;
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgba(255, 0, 0, 0.5);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 600;
+    transition: all 0.4s ease;
+    text-transform: uppercase;
+    position: static;
+}
+.Servicios button:hover{
+    background-color: rgba(68, 11, 11, 0.5);
+
+}
+.Servicios button:active {
+    background-color: rgb(63, 1, 1); 
+}
+
+
 .registro-vehiculo {
     position: relative;
     width: 100vw;
@@ -203,6 +328,7 @@ body{
 }
 
 .filtros{
+    padding-top: 2vw;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -219,6 +345,13 @@ body{
     align-items: center;
     justify-content: center;
 
+}
+
+.filtros .radio-option label  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .filtros .radio-option{
@@ -243,7 +376,6 @@ body{
     font-size: 40px;
     margin-bottom: 10px;
     color:#8fa0b7;
-;
 }
 
 .buscador{
