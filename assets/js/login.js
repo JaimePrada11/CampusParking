@@ -25,7 +25,7 @@ formularioregistro.addEventListener("submit", async (event) => {
             alert('Inicio de sesión exitoso');
             localStorage.setItem('Usuario', JSON.stringify(usuarioEncontrado))
             formularioregistro.reset();
-            window.location.href = '../pages/Home.html';
+            window.location.href = '../pages/Gestion.html';
 
         } else {
             alert('Usuario o contraseña incorrectos');

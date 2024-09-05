@@ -4,16 +4,23 @@
     font-weight: normal;
 }
 
+
+@font-face {
+    font-family: "satoshi";
+    src: url(../fonts/Satoshi-Regular.otf);
+    font-weight: normal;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+    font-family: "satoshi";
 }
 
 .Inicio {
@@ -37,13 +44,13 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); 
-    filter: blur(10px); 
+    background: rgba(0, 0, 0, 0.5);
+    filter: blur(10px);
     z-index: -1;
     opacity: 0.9;
 }
 
-.Inicio h1{
+.Inicio h1 {
     color: white;
     text-align: center;
     font-family: "ranker";
@@ -53,7 +60,7 @@ body{
     top: 15%;
 }
 
-.Inicio button{
+.Inicio button {
     width: 40%;
     height: 40px;
     border-radius: 5px;
@@ -70,18 +77,19 @@ body{
 
 }
 
-.Inicio button:hover{
+.Inicio button:hover {
     background-color: rgba(255, 255, 255, 0.5);
     color: white;
 
 
 }
+
 .Inicio button:active {
-    background-color: rgba(230, 230, 230, 1); 
+    background-color: rgba(230, 230, 230, 1);
     color: white;
 }
 
-.Servicios{
+.Servicios {
     color: black;
     display: flex;
     flex-direction: column;
@@ -91,22 +99,22 @@ body{
     padding-bottom: 22.5vw;
 }
 
-.Servicios h1{
+.Servicios h1 {
     font-size: 2rem;
     text-transform: uppercase;
 }
 
-.Servicios div{
+.Servicios div {
     margin: 3vw;
     width: 90%;
 }
 
-.Servicios h2{
+.Servicios h2 {
     font-size: 1.5rem;
 
 }
 
-.Servicios img{
+.Servicios img {
     margin: 2vw;
     width: 80%;
     border-radius: 10px;
@@ -115,7 +123,7 @@ body{
 
 }
 
-.Servicios button{
+.Servicios button {
     margin-top: 2vw;
     font-family: "League Spartan", sans-serif;
     width: 50%;
@@ -132,12 +140,14 @@ body{
     text-transform: uppercase;
     position: static;
 }
-.Servicios button:hover{
+
+.Servicios button:hover {
     background-color: rgba(68, 11, 11, 0.5);
 
 }
+
 .Servicios button:active {
-    background-color: rgb(63, 1, 1); 
+    background-color: rgb(63, 1, 1);
 }
 
 
@@ -150,8 +160,8 @@ body{
     justify-content: center;
     text-align: center;
     color: #fff;
-    overflow: hidden; 
-    background-image: url(../images/Nuevo-Inicio-Sesion.png); 
+    overflow: hidden;
+    background-image: url(../images/Nuevo-Inicio-Sesion.png);
     background-position: center left;
     background-size: cover;
     z-index: 0;
@@ -164,11 +174,11 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../images/Nuevo-Inicio-Sesion.png); 
+    background-image: url(../images/Nuevo-Inicio-Sesion.png);
     background-position: center left;
     background-size: cover;
-    filter: blur(1.5px); 
-    z-index: -1; 
+    filter: blur(1.5px);
+    z-index: -1;
 }
 
 
@@ -265,7 +275,7 @@ body{
 
 }
 
-.ContenedorVehiculos{
+.ContenedorVehiculos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -274,7 +284,7 @@ body{
     padding-bottom: 12vw;
 }
 
-.contenedor{
+.contenedor {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -282,15 +292,14 @@ body{
     text-align: center;
 }
 
-.vehiculo{
+.vehiculo {
     margin: 1rem;
     padding: 0.5rem 1rem;
-    width: 15rem;
-    height: auto;
+    width: 20rem;
     object-fit: fill;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
     position: relative;
     isolation: isolate;
@@ -300,7 +309,7 @@ body{
 }
 
 
-.vehiculo img{
+.vehiculo img {
     margin-top: 2vw;
     width: 100%;
     max-width: 15rem;
@@ -308,26 +317,35 @@ body{
 }
 
 
-.vehiculo h1{
+.vehiculo h1 {
     font-family: "ranker";
     font-size: 4rem;
     margin-bottom: 0;
-    color:#8fa0b7;
+    color: #8fa0b7;
 }
 
-.vehiculo h2{
+.vehiculo h2 {
     margin-top: 0;
     font-family: "ranker";
     font-weight: lighter;
     font-size: 2rem;
 }
 
-.infoestacionamiento{
-    text-align: start;
-    display: none;
+.infoestacionamiento {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+
 }
 
-.filtros{
+.infoestacionamiento span {
+    text-align: end;
+    font-size: 1rem;
+
+
+}
+
+.filtros {
     padding-top: 2vw;
     width: 100vw;
     display: flex;
@@ -337,7 +355,7 @@ body{
     margin-bottom: 0;
 }
 
-.filtros .radio{
+.filtros .radio {
     margin-top: 10vw;
     width: 90vw;
     display: flex;
@@ -347,14 +365,14 @@ body{
 
 }
 
-.filtros .radio-option label  {
+.filtros .radio-option label {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.filtros .radio-option{
+.filtros .radio-option {
     margin: 0.5rem;
     width: 120px;
     height: auto;
@@ -363,7 +381,6 @@ body{
     object-fit: fill;
     text-align: center;
     border-radius: 5px;
-    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
     position: relative;
     isolation: isolate;
@@ -375,10 +392,10 @@ body{
 .filtros .radio-option label i {
     font-size: 40px;
     margin-bottom: 10px;
-    color:#8fa0b7;
+    color: #8fa0b7;
 }
 
-.buscador{
+.buscador {
     margin-top: 0;
     display: flex;
     align-items: center;
@@ -406,20 +423,19 @@ body{
     text-align: center;
 }
 
-.buscador input::placeholder{
+.buscador input::placeholder {
     text-align: center;
 }
 
 #filter-placa:focus {
     border-radius: 5px;
     color: red;
-    border-color: #007bff; 
+    border-color: #007bff;
     background-color: #f0f8ff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
-    outline: none; 
+    outline: none;
 }
 
-.buscador button{
+.buscador button {
     padding: 0.5rem;
     border-radius: 10px;
     background-color: rgb(83, 4, 4);
@@ -431,11 +447,201 @@ body{
     transition: all 0.4s ease;
     text-transform: uppercase;
     margin-bottom: 1vw;
+    color: white;
 }
 
 
-button:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+button:hover, button:active {
+    background-color: rgba(54, 18, 18, 0.5);
     color: black;
+}
 
+.salida {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+
+}
+
+.salida img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+
+}
+
+.botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.vehiculo-1 {
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    width: 15rem;
+    min-height: 15rem;
+    object-fit: fill;
+    text-align: center;
+    border-radius: 10px;
+    text-transform: uppercase;
+    isolation: isolate;
+    overflow: hidden;
+    background-color: #becada;
+    color: white;
+}
+
+
+.vehiculo-1 h1 {
+    font-family: "ranker";
+    font-size: 4rem;
+    margin-bottom: 0;
+    color: #8fa0b7;
+}
+
+.vehiculo-1 h2 {
+    margin-top: 0;
+    font-family: "ranker";
+    font-weight: lighter;
+    font-size: 2rem;
+}
+.vehiculo-1 .info {
+    gap: 15rem;
+}
+
+.infestacionamiento {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.botones button {
+    width: 50%;
+    height: 40px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #8fa0b7;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.4s ease;
+    text-transform: uppercase;
+    color: white;
+}
+
+.botones button:hover {
+    background-color: rgba(112, 16, 16, 0.5);
+
+}
+
+.botones button:active {
+    background-color: rgb(65, 0, 0);
+}
+
+
+
+.inputbox {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.inputbox input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.inputbox input:focus~label,
+.inputbox input:valid~label {
+    top: -20px;
+    font-size: 12px;
+    color: #333;
+}
+
+button.actualizar {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.actualizar:hover {
+    background-color: #45a049;
+}
+
+.historial{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#contenedorHistorial{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 21vw;
+}
+
+.responsive{
+    display: block;
+}
+
+@media screen and (min-width:800px){
+    main {
+        display:none;
+    }
+    .responsive{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../images/Nuevo-Inicio-Sesion.png);
+        margin: auto;
+        color: white;
+    }
+}
+
+@media screen and (max-width:350px){
+    main {
+        display:none;
+    }
+    .responsive{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../images/Nuevo-Inicio-Sesion.png);
+        margin: auto;
+        color: white;
+    }
 }

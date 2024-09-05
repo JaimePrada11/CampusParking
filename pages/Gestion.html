@@ -42,18 +42,13 @@
                     </li>
 
                     <li class="nav__item">
-                        <a href="#portfolio" class="nav__link">
-                            <i class='bx bx-file nav__icon'></i>
-                            <span class="nav__name">Reportes</span>
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#contactme" class="nav__link">
+                        <a href="#historial" class="nav__link">
                             <i class='bx bx-history nav__icon'></i>
                             <span class="nav__name">Historial</span>
                         </a>
                     </li>
+
+            
                 </ul>
             </div>
 
@@ -72,13 +67,13 @@
                 <div>
                     <h2>Estacionamiento</h2>
                     <img src="https://media-public.canva.com/KUlVI/MAEMqMKUlVI/1/s2.jpg" alt="">
-                    <button> MIRAR</button>
+                    <button class="mirar"> MIRAR</button>
 
                 </div>
                 <div>
                     <h2>Reportes</h2>
                     <img src="https://media-public.canva.com/MADGyDRBkYQ/4/screen.jpg" alt="">
-                    <button> REVISAR </button>
+                    <button class="revisar"> REVISAR </button>
                 </div>
             </section>
         </section>
@@ -143,6 +138,11 @@
             </div>
         </section>
 
+        <section id="historial" class="historial">
+            <div id="contenedorHistorial"></div>
+
+        </section>
+
 
         <template class="plantillaVehiculo">
             <div class="vehiculo">
@@ -155,17 +155,40 @@
 
                     </div>
                     <div class="infoestacionamiento">
-                        <p>Hora Entrada: <span> </span></p>
-                        <p>Hora Salida: <span> </span></p>
-                        <p>Tiempo: <span> </span></p>
-                        <p>Costo: <span> </span></p>
+                        <p class="horaentrada">Hora Entrada: <span> </span></p>
+                        <p class="horasalida">Hora Salida: <span> </span></p>
+                        <p class="tiempo">Tiempo: <span> </span></p>
+                        <p class="costo">Costo: <span> </span></p>
                     </div>
+                </div>
+                <div class="botones">
+                    <button id="sacar">Salida</button>
                 </div>
             </div>
 
         </template>
 
+
+        <template id="plantillaVehiculoHistorial">
+            <div class="vehiculo">
+                <img src="" alt="Imagen del Vehículo">
+                <div class="placa"></div>
+                <div class="tipo"></div>
+                <div class="lugar"><span></span></div>
+                <div class="horaentrada">Hora Entrada: <span></span></div>
+                <div class="horasalida">Hora Salida: <span></span></div>
+                <div class="tiempo">Tiempo: <span></span> horas</div>
+                <div class="costo">Costo: <span></span> COP</div>
+                <div class="botones">
+                    <button id="borrar">Borrar</button>
+                </div>
+            </div>
+        </template>
     </main>
+
+    <div class="responsive">
+        <h1>LA PAGINA NO ACEPTA ESTE DISPOSITIVO</h1>
+    </div>
 
     <script src="../assets/js/main.js"></script>
 
