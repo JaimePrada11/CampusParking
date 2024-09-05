@@ -1,11 +1,5 @@
 # Proyecto_JavaScript_PradaJaime
-Es una pagina web destinada a optimizar la gestión de estacionamiento.
-
-# NF - Página Web
-
-Esta landing page está dedicada al rapero NF (Nathan John Feuerstein), y está diseñada para ofrecer una presentación impactante y concisa sobre el artista. La página proporciona una visión general de NF, incluyendo su biografía, discografía, tienda de merchandising y próximas giras. El objetivo es proporcionar una introducción eficaz al artista y facilitar el acceso a sus productos y eventos más importantes.
-
-![Diseño Inicial](/Multimedia/Landing%20Page%20Final%20Home.JPG)
+Es una pagina web destinada a optimizar la gestión de estacionamiento, con un crud basico para el administrador poder controlar su estacionamiento
 
 ## Tabla de contenidos
 
