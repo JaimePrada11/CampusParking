@@ -355,5 +355,5 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    fetchVehiculos();
 });
+
